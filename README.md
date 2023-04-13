@@ -36,3 +36,9 @@ jshell /home/myuser/capitulo-2.jsh
 /save -history [file-path]: saves all the code and commands entered during the session, in the file entered in the second argument. Even the internal commands are saved in the file.
 /save -start: saves all the code launched when JShell starts.
 ```
+
+## Outros comandos utilizados no curso
+
+```
+java -jar novidades-java-rest-0.0.1-SNAPSHOT.jar
+```
