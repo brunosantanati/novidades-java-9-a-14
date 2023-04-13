@@ -16,9 +16,10 @@ public class TesteHttp11 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(uc.getInputStream()));
 
 		String line = "";
+		String currentLine;
 
-		while (br.readLine() != null) {
-			line = line.concat(br.readLine()).concat(System.lineSeparator());
+		while ((currentLine = br.readLine()) != null) {
+			line = line.concat(currentLine).concat(System.lineSeparator());
 		}
 
 		System.out.println(line);
