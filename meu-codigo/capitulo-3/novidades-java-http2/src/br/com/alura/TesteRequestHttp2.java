@@ -17,8 +17,8 @@ public class TesteRequestHttp2 {
 		HttpRequest httpRequest = HttpRequest.newBuilder(new URI("https://www.casadocodigo.com.br")).GET().build();
 		HttpResponse<String> resp = httpClient.send(httpRequest, BodyHandlers.ofString());
 
-		System.out.println(resp.statusCode());
 		System.out.println(resp.body());
+		System.out.println(resp.statusCode());
 		System.out.println(resp.version());
 
 	}
