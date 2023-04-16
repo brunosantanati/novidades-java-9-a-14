@@ -10,14 +10,14 @@ public class TesteEnvioBloqueante {
 
 	public static void main(String[] args) {
 
-		List<NotaFiscal> notasFiscais = List.of(new NotaFiscal("João", 39.99, LocalDate.now()),
+		List<NotaFiscal> notasFiscais = List.of(new NotaFiscal("JoÃ£o", 39.99, LocalDate.now()),
 				new NotaFiscal("Renata", 41.20, LocalDate.now()), new NotaFiscal("Paulo", 32.10, LocalDate.now()),
 				new NotaFiscal("Feranda", 15.00, LocalDate.now()));
 
 		NotaFiscalWSClient nfwsc = new NotaFiscalWSClient();
 		notasFiscais.forEach(nf -> {
 			nfwsc.enviar(nf);
-			System.out.println("Parabéns pela compra!!");
+			System.out.println("ParabÃ©ns pela compra!!");
 		});
 	}
 }
