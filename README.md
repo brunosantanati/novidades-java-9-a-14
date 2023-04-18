@@ -47,4 +47,16 @@ Dentro da pasta do projeto (e-livraria) executar os comandos abaixo:
 javac -d bin/ -cp bin src/br/com/alura/modelo/dominio/Categoria.java src/br/com/alura/modelo/dominio/Livro.java src/br/com/alura/modelo/dominio/NotaFiscal.java src/br/com/alura/http/dao/LivroDAO.java src/br/com/alura/nf/servico/NotaFiscalServico.java src/br/com/alura/nf/subscriber/NotaFiscalSubscriber.java src/br/com/alura/nf/util/NotaFiscalUtil.java src/br/com/alura/Principal.java
 
 java -cp bin br.com.alura.Principal
+
+Para criar um módulo, executar dentro da pasta src:
+
+mkdir br.com.alura
+mv br br.com.alura/
+Dentro da pasta src/br.com.alura criar o arquivo module.info.java
+
+Para compilar e executar a aplicação modular, rodar na pasta do projeto (e-livraria):
+
+javac -d mods/br.com.alura --module-path mods src/br.com.alura/br/com/alura/modelo/dominio/Categoria.java src/br.com.alura/br/com/alura/modelo/dominio/Livro.java src/br.com.alura/br/com/alura/modelo/dominio/NotaFiscal.java src/br.com.alura/br/com/alura/http/dao/LivroDAO.java src/br.com.alura/br/com/alura/nf/servico/NotaFiscalServico.java src/br.com.alura/br/com/alura/nf/subscriber/NotaFiscalSubscriber.java src/br.com.alura/br/com/alura/nf/util/NotaFiscalUtil.java src/br.com.alura/br/com/alura/Principal.java src/br.com.alura/module-info.java
+
+java --module-path mods -m br.com.alura/br.com.alura.Principal
 ```
