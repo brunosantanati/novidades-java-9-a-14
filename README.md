@@ -40,9 +40,12 @@ jshell /home/myuser/capitulo-2.jsh
 ## Outros comandos utilizados no curso
 
 ```
+Antes de rodar o exemplo do capítulo 3:
+https://github.com/brunosantanati/novidades-java-9-a-14/blob/main/meu-codigo/capitulo-3/req-assincrona-http2/src/br/com/alura/TesteDAO.java
+rodar esse comando:
 java -jar novidades-java-rest-0.0.1-SNAPSHOT.jar
 
-Dentro da pasta do projeto (e-livraria) executar os comandos abaixo:
+Dentro da pasta do projeto (e-livraria) rodar os comandos abaixo para compilar e executar o programa:
 
 javac -d bin/ -cp bin src/br/com/alura/modelo/dominio/Categoria.java src/br/com/alura/modelo/dominio/Livro.java src/br/com/alura/modelo/dominio/NotaFiscal.java src/br/com/alura/http/dao/LivroDAO.java src/br/com/alura/nf/servico/NotaFiscalServico.java src/br/com/alura/nf/subscriber/NotaFiscalSubscriber.java src/br/com/alura/nf/util/NotaFiscalUtil.java src/br/com/alura/Principal.java
 
