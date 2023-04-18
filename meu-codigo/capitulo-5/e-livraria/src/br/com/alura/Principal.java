@@ -23,7 +23,7 @@ public class Principal {
 		System.out.println("Qual livro deseja?");
 		Integer numero = scn.nextInt();
 
-		System.out.println("Livro escolhido é o: " + livros.get(numero).getNome());
+		System.out.println("Livro escolhido Ã© o: " + livros.get(numero).getNome());
 
 		System.out.println("Favor inserir seu nome para gerar nota fiscal");
 		String nome = scn.next();
