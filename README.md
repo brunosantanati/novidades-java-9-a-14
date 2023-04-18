@@ -41,4 +41,10 @@ jshell /home/myuser/capitulo-2.jsh
 
 ```
 java -jar novidades-java-rest-0.0.1-SNAPSHOT.jar
+
+Dentro da pasta do projeto (e-livraria) executar os comandos abaixo:
+
+javac -d bin/ -cp bin src/br/com/alura/modelo/dominio/Categoria.java src/br/com/alura/modelo/dominio/Livro.java src/br/com/alura/modelo/dominio/NotaFiscal.java src/br/com/alura/http/dao/LivroDAO.java src/br/com/alura/nf/servico/NotaFiscalServico.java src/br/com/alura/nf/subscriber/NotaFiscalSubscriber.java src/br/com/alura/nf/util/NotaFiscalUtil.java src/br/com/alura/Principal.java
+
+java -cp bin br.com.alura.Principal
 ```
