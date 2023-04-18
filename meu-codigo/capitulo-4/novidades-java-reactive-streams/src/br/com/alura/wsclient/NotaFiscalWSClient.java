@@ -10,6 +10,7 @@ public class NotaFiscalWSClient {
 			Thread.sleep(5000);
 			System.out.format("Nota fiscal emitida %nEm nome de %s %nNa data de %s %n", 
 					nf.getNome(), nf.getData());
+			System.out.println("A thread do NotaFiscalWSClient é: " + Thread.currentThread().getName());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
